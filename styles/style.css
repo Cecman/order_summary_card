@@ -1,0 +1,226 @@
+html {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+html p {
+  font-size: 16px;
+}
+
+html h2 {
+  font-size: 1.5rem;
+  color: #1f2f56;
+}
+
+html h3 {
+  font-size: 1rem;
+}
+
+html p, html a {
+  color: #7280a7;
+  font-weight: 500;
+}
+
+body {
+  background-color: #e0e8ff;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.attribution {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card_wrap {
+  max-width: 350px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .card_wrap {
+    max-width: 400px;
+  }
+}
+
+.card_wrap .hero_area img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card_wrap .card_content .info_text {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card_wrap .card_content .info_text h2 {
+  text-align: center;
+}
+
+.card_wrap .card_content .info_text .description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.875rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .card_wrap .card_content .info_text {
+    width: 80%;
+  }
+}
+
+.card_wrap .card_content .plan {
+  background-color: #f5f7ff;
+  width: 90%;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 375px) {
+  .card_wrap .card_content .plan {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 1em;
+    padding: 1em 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card_wrap .card_content .plan {
+    width: 80%;
+  }
+}
+
+.card_wrap .card_content .plan .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.card_wrap .card_content .plan img {
+  width: 55px;
+  height: 55px;
+}
+
+@media screen and (min-width: 375px) {
+  .card_wrap .card_content .plan img {
+    margin-left: 1rem;
+  }
+}
+
+.card_wrap .card_content .plan a {
+  color: #3829e0;
+  font-weight: 700;
+  margin-left: 0;
+}
+
+.card_wrap .card_content .plan a:hover {
+  color: #7469e8;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 375px) {
+  .card_wrap .card_content .plan a {
+    margin: 0 1rem 0 auto;
+  }
+}
+
+.card_wrap .card_content .plan .order_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card_wrap .card_content .plan .order_info h3 {
+  margin: 0 0 0.5em 0;
+}
+
+.card_wrap .card_content .plan .order_info p {
+  margin: 0;
+}
+
+.card_wrap .card_content .finalize {
+  width: 90%;
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .card_wrap .card_content .finalize {
+    width: 80%;
+  }
+}
+
+.card_wrap .card_content .finalize button {
+  cursor: pointer;
+  background-color: #3829e0;
+  color: #f5f7ff;
+  font-weight: 700;
+  padding: 1.5em 0;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 15px #7280a7;
+          box-shadow: 0 5px 15px #7280a7;
+  margin-bottom: 1rem;
+}
+
+.card_wrap .card_content .finalize button:hover {
+  background-color: #7469e8;
+}
+
+.card_wrap .card_content .finalize a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.card_wrap .card_content .finalize a:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=style.css.map */
