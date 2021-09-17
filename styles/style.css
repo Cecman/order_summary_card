@@ -43,13 +43,17 @@ img {
 .container {
   width: 90%;
   margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card_wrap {
   max-width: 350px;
   border-radius: 10px;
   background-color: white;
-  margin: 0 auto;
+  margin: auto;
 }
 
 @media screen and (min-width: 1440px) {

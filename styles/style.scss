@@ -1,139 +1,141 @@
-@import "base/variables";
+@import 'base/variables';
 body {
-    background-color: $pale_blue;
-    background-image: url(../images/pattern-background-mobile.svg);
-    background-repeat: no-repeat;
-    @media screen and (min-width: $bp_mobile) {
-        background-image: url(../images/pattern-background-desktop.svg);
-    }
+  background-color: $pale_blue;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  @media screen and (min-width: $bp_mobile) {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 .attribution {
-    display: none;
+  display: none;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
 }
 .card_wrap {
-    max-width: 350px;
-    border-radius: 10px;
-    background-color: white;
-    margin: 0 auto;
-    @media screen and (min-width: $bp_pc) {
-        max-width: 400px;
+  max-width: 350px;
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  @media screen and (min-width: $bp_pc) {
+    max-width: 400px;
+  }
+  .hero_area img {
+    border-radius: 10px 10px 0 0;
+  }
+  .card_content {
+    //card header
+    .info_text {
+      width: 85%;
+      margin: 0 auto;
+      h2 {
+        text-align: center;
+      }
+      .description {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        line-height: 1.875rem;
+      }
+      @media screen and (min-width: $bp_pc) {
+        width: 80%;
+      }
     }
-    .hero_area img {
-        border-radius: 10px 10px 0 0;
+    //card plan info
+    .plan {
+      background-color: $very_pale_blue;
+      width: 90%;
+      margin: 1.5rem auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 1em;
+      padding: 1em 0;
+      @media screen and (min-width: $bp_mobile) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 1em;
+        padding: 1em 0;
+      }
+      @media screen and (min-width: $bp_pc) {
+        width: 80%;
+      }
+      .wrap {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      img {
+        width: 55px;
+        height: 55px;
+        @media screen and (min-width: $bp_mobile) {
+          margin-left: 1rem;
+        }
+      }
+      a {
+        color: $bright_blue;
+        font-weight: 700;
+        margin-left: 0;
+        &:hover {
+          color: $hover_blue;
+          text-decoration: none;
+        }
+        @media screen and (min-width: $bp_mobile) {
+          margin: 0 1rem 0 auto;
+        }
+      }
+      .order_info {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          margin: 0 0 0.5em 0;
+        }
+        p {
+          margin: 0;
+        }
+      }
     }
-    .card_content {
-        //card header
-        .info_text {
-            width: 85%;
-            margin: 0 auto;
-            h2 {
-                text-align: center;
-            }
-            .description {
-                text-align: center;
-                margin-bottom: 1.5rem;
-                line-height: 1.875rem;
-            }
-            @media screen and (min-width: $bp_pc) {
-                width: 80%;
-            }
+    //card footer
+    .finalize {
+      width: 90%;
+      margin: 1rem auto;
+      padding-bottom: 1rem;
+      text-align: center;
+      @media screen and (min-width: $bp_pc) {
+        width: 80%;
+      }
+      button {
+        cursor: pointer;
+        background-color: $bright_blue;
+        color: $very_pale_blue;
+        font-weight: 700;
+        padding: 1.5em 0;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px $desaturated_blue;
+        margin-bottom: 1rem;
+        &:hover {
+          background-color: $hover_blue;
         }
-        //card plan info
-        .plan {
-            background-color: $very_pale_blue;
-            width: 90%;
-            margin: 1.5rem auto;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
-            gap: 1em;
-            padding: 1em 0;
-            @media screen and (min-width: $bp_mobile) {
-                flex-direction: row;
-                align-items: center;
-                justify-content: start;
-                gap: 1em;
-                padding: 1em 0;
-            }
-            @media screen and (min-width: $bp_pc) {
-                width: 80%;
-            }
-            .wrap {
-                display: flex;
-                align-items: center;
-                gap: 1.5rem;
-            }
-            img {
-                width: 55px;
-                height: 55px;
-                @media screen and (min-width: $bp_mobile) {
-                    margin-left: 1rem;
-                }
-            }
-            a {
-                color: $bright_blue;
-                font-weight: 700;
-                margin-left: 0;
-                &:hover {
-                    color: $hover_blue;
-                    text-decoration: none;
-                }
-                @media screen and (min-width: $bp_mobile) {
-                    margin: 0 1rem 0 auto;
-                }
-            }
-            .order_info {
-                display: flex;
-                flex-direction: column;
-                h3 {
-                    margin: 0 0 0.5em 0;
-                }
-                p {
-                    margin: 0;
-                }
-            }
+      }
+      a {
+        text-decoration: none;
+        font-weight: 700;
+        &:hover {
+          color: $dark_blue;
         }
-        //card footer
-        .finalize {
-            width: 90%;
-            margin: 1rem auto;
-            padding-bottom: 1rem;
-            text-align: center;
-            @media screen and (min-width: $bp_pc) {
-                width: 80%;
-            }
-            button {
-                cursor: pointer;
-                background-color: $bright_blue;
-                color: $very_pale_blue;
-                font-weight: 700;
-                padding: 1.5em 0;
-                width: 100%;
-                border: none;
-                border-radius: 10px;
-                box-shadow: 0 5px 15px $desaturated_blue;
-                margin-bottom: 1rem;
-                &:hover {
-                    background-color: $hover_blue;
-                }
-            }
-            a {
-                text-decoration: none;
-                font-weight: 700;
-                &:hover {
-                    color: $dark_blue;
-                }
-            }
-        }
+      }
     }
+  }
 }
